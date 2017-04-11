@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view>
-    	加载中。。。
     </router-view>
   </div>
 </template>
@@ -14,4 +13,10 @@ export default {
 
 <style>
 @import './styles/reset.css';
+@import './styles/common.scss';
+
+#app{
+	text-align: center;
+}
+
 </style>

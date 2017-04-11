@@ -28,10 +28,16 @@
 }
 .clearfix:before,.clearfix:after{
     content:"";
-    display:table;
+    display: table;
 }
 .clearfix:after{
     clear:both;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    content: ".";
 }
 .clearfix{
     *zoom:1;

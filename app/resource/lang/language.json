@@ -1,0 +1,7 @@
+/**
+ * 多语言支持
+ */
+[
+	{name:'English',file:'english'},
+	{name:'简体中文',file:'zh_cn'}
+];

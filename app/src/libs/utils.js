@@ -29,14 +29,14 @@ export const telSeparator = (tel, connect) => {
 export const getOS = () => {
 	var ua = window.navigator.userAgent.toLowerCase();
 	var os = null;
-	
+
 	if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1 || ua.indexOf("ipod") > -1) {
         os = "ios";
     } else if (ua.indexOf("android") > -1) {
         os = "android";
-    } else if(ua.indexOf('windows phone')){
+    } else if(ua.indexOf('windows phone')>-1){
 		os = "wp";
-    } else if(ua.indexOf('symbianos')){
+    } else if(ua.indexOf('symbianos')>-1){
 		os = "sb";
     } else {
         os = 'pc';

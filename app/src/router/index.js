@@ -20,20 +20,25 @@ Vue.use(Router)
 var router = new Router({
   routes: routers
 })
-// 判断路由
+/**
+ * 路由导向,pc、moblie区分导向
+ * @param  {[type]} (to, from, next [description]
+ */
 router.beforeEach((to, from, next) => {
-
 	var os =utils.getOS();
-
-	/*if(os=='pc'){
+	var index =to.path.indexOf('/m/');
+	if(index==-1) {
+		index = to.path =='/m' ? 1:-1;
+	}
+	if(os == 'pc' && index!=-1){
+		console.log('pc ==>');
 		next('/');
-	}else{
+	}else if(os != 'pc' && index==-1){
+		console.log('mobile ==>');
 		next('/m');
-	}*/
-
-	console.log('from:',from);
-	console.log('to:',to);
-	console.log('os:',os); 
+	}else{
+		next();
+	}
 })
 
 export default router;
