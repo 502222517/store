@@ -94,9 +94,9 @@ export default {
 		float: left;
 		width: 120px;
 		text-align: center;
-		color: #666666;
+		color: #666;
 	}
-	.menus>li.menu-item.selected{
+	.menus>li.menu-item:hover,.menus>li.menu-item.selected{
 		color:$redColor;
 	}
 }
