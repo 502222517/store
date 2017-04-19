@@ -3,14 +3,20 @@
   	 <div class="cell-head">
         <vue-head></vue-head> 
      </div>
-     
-     <div >
-        
+     <div class="cell-banner" >
+        <vue-banner></vue-banner>
      </div>
+     <div class="cell-category">
+        <vue-sub-banner></vue-sub-banner>
+     </div>
+
+     <div class="fill-bottom"></div>
   </div>
 </template>
 
 <script>
+import banner from "@/components/computer/banner";
+import subBanner from "@/components/computer/sub-banner";
 
 export default {
 	name: 'home',
@@ -20,7 +26,8 @@ export default {
 		}
 	},
     components:{
-
+      'vue-banner':banner,
+      'vue-sub-banner':subBanner
     },
     created () {
 
@@ -42,24 +49,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hello{
-	margin-top: 60px;
-	text-align: center;
+.cell-category{
+  padding: 40px 0 60px;
+  border-bottom: 1px solid #eee;
 }
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-    a{
-      color: #42b983;
-    }
-  }
+.fill-bottom{
+  height: 50px;
 }
 </style>

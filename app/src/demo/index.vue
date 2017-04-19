@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 	.deom-view{
-		padding:100px;
+		padding:50px 100px;
 
 		.links{
 			line-height: 50px;

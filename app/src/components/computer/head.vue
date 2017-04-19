@@ -54,7 +54,7 @@ export default {
 
 .pc-head{
 	margin: auto;
-	width: 1200px;	 
+	width: $pcWidth;
 	
 	.logo-box,.menus-box{
 		height: 130px;	
@@ -74,17 +74,20 @@ export default {
 		}
 	}
 	.logo{
-		padding-top: 40px;
+		padding-top: 55px;
 		line-height: 40px;
-		font-family:Arial;
 		font-size:36px;
 		color:#CCCCCC;
+		span{
+			font-family:Arial;
+			font-weight: bold;	
+		}
 		.red{
 			color:$redColor;
 		}
 	}
 	.menus{
-		padding-top: 40px;
+		padding-top: 55px;
 		line-height: 45px;
 		font-size: 16px;
 		cursor: pointer;
