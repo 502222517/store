@@ -4,7 +4,9 @@ import router from './router/index'
 import * as utils from '@/libs/utils' 
 
 // pc 公共组件
+import PC_Logo from '@/components/computer/logo'
 import PC_Head from '@/components/computer/head'
+import PC_Footer from '@/components/computer/footer'
 // const PC_Head = r => require.ensure([], () => r(require('@/components/computer/head')), 'pc');
 
 
@@ -16,7 +18,9 @@ Vue.config.productionTip = false
  */
 let os =utils.getOS();
 if(os == 'pc'){
+	Vue.component('vue-logo',PC_Logo);
 	Vue.component('vue-head',PC_Head);
+	Vue.component('vue-footer',PC_Footer);
 }else{
 
 }

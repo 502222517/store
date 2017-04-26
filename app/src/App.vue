@@ -11,9 +11,10 @@ export default {
 }
 </script>
 
-<style>
+<style  lang="scss">
 @import './styles/reset.css';
 @import './styles/common.scss';
+@import './styles/icon.scss';
 
 #app{
 	text-align: center;

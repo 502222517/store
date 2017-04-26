@@ -33,8 +33,9 @@
         <vue-classify></vue-classify>
      </div>
 
- 
-     <div class="fill-bottom"></div>
+     <div class="footer-cell">
+       <vue-footer></vue-footer>
+     </div>
   </div>
 </template>
 
@@ -83,9 +84,6 @@ export default {
 .cell-category{
   padding: 40px 0 60px;
   border-bottom: 1px solid #eee;
-}
-.fill-bottom{
-  height: 50px;
 }
 .news-product{
   margin: auto;

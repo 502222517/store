@@ -1,10 +1,8 @@
 <template>
 <div class="pc-head clearfix">
 	<div class="logo-box">
-		<div class="logo">
-			<strong>
-			<span class="red">WONDERFUL</span><span> DRESS</span>
-			</strong>
+		<div class="logo-cell">
+			<vue-logo></vue-logo>
 		</div>
 	</div>
 	<div class="menus-box">
@@ -65,6 +63,9 @@ export default {
 		float: left;
 		width: 550px;
 		margin-right: -550px;
+		.logo-cell{
+			padding-top: 55px;	
+		}
 	}
 	.menus-box{
 		float: right;
@@ -73,19 +74,7 @@ export default {
 			margin-left:  550px;
 		}
 	}
-	.logo{
-		padding-top: 55px;
-		line-height: 40px;
-		font-size:36px;
-		color:#CCCCCC;
-		span{
-			font-family:Arial;
-			font-weight: bold;	
-		}
-		.red{
-			color:$redColor;
-		}
-	}
+	
 	.menus{
 		padding-top: 55px;
 		line-height: 45px;

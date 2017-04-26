@@ -1,0 +1,19 @@
+@import './variable.scss';
+
+@mixin icon_42 ($imgUrl) {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	background: url($imgUrl) no-repeat;
+	background-size: 100% 100%;
+}
+
+.ic_qq{
+	@include icon_42("./assets/icon/qq.png");
+}
+.ic_wx{
+	@include icon_42("./assets/icon/wx.png");
+}
+.ic_wb{
+	@include icon_42("./assets/icon/wb.png");
+}
