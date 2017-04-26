@@ -102,9 +102,12 @@ export default {
 			padding: 20px;
 			.article{
 				list-style: disc;
-				a{ color:#999;}
-				a:hover{ color:#fff;}
-
+				a{ 
+					color:#999;
+					&:hover{
+						color:#fff;
+					}
+				}
 			}
 		}
 		.contact{
