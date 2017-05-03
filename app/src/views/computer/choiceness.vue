@@ -1,11 +1,16 @@
 <template>
-<div class="sub-banner-view">
-	<div class="img-box">
-		<img src="../../data/images/sub_banner/1.jpg">
-	</div>
+<div class="page-view">
+	<div class="cell-head">
+        <vue-head :index="2"></vue-head> 
+     </div>
+     <div class="cell-banner" >
+        <vue-sub-banner></vue-sub-banner>
+     </div>
+     
 </div>
 </template>
 <script>
+import subBanner from "@/components/computer/sub-banner";
 
 export default {
 	data () {
@@ -14,7 +19,7 @@ export default {
         }
     },
     components:{
-
+		'vue-sub-banner':subBanner,
     },
     created (){
 

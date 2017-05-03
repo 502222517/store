@@ -1,9 +1,5 @@
 <template>
-<div class="sub-banner-view">
-	<div class="img-box">
-		<img src="../../data/images/sub_banner/1.jpg">
-	</div>
-</div>
+
 </template>
 <script>
 

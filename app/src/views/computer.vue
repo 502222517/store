@@ -7,7 +7,7 @@
         <vue-banner></vue-banner>
      </div>
      <div class="cell-category">
-        <vue-sub-banner></vue-sub-banner>
+        <vue-nav-module></vue-nav-module>
      </div>
      <div class="news-product">
         <h3>秋冬装备全新上市</h3>
@@ -32,7 +32,6 @@
      <div class="classify-cell">
         <vue-classify></vue-classify>
      </div>
-
      <div class="footer-cell">
        <vue-footer></vue-footer>
      </div>
@@ -41,7 +40,7 @@
 
 <script>
 import banner from "@/components/computer/banner";
-import subBanner from "@/components/computer/sub-banner";
+import navModule from "@/components/computer/nav-module";
 import threeProduct from "@/components/computer/product/three";
 import singleAd from "@/components/computer/ad/single";
 import classify from "@/components/computer/classify";
@@ -55,7 +54,7 @@ export default {
 	},
     components:{
       'vue-banner':banner,
-      'vue-sub-banner':subBanner,
+      'vue-nav-module':navModule,
       'vue-three-product':threeProduct,
       'vue-single-ad':singleAd,
       'vue-classify':classify

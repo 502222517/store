@@ -1,4 +1,4 @@
-<template>
+	<template>
 <div class="pc-head clearfix">
 	<div class="logo-box">
 		<div class="logo-cell">
@@ -7,11 +7,7 @@
 	</div>
 	<div class="menus-box">
 		<ul class="menus clearfix">
-			<li class="menu-item selected">首页</li>
-			<li class="menu-item">精选特卖</li>
-			<li class="menu-item">精品男装</li>
-			<li class="menu-item">精品女装</li>
-			<li class="menu-item">品牌介绍</li>
+			<router-link tag="li" v-for="m in menus" class="menu-item" :class="{selected: m.val ==index}"  :to="m.path">{{m.text}}</router-link>
 		</ul>
 	</div>
 </div>
@@ -19,9 +15,21 @@
 <script>
 
 export default {
+	props:{
+		index:{
+			type:Number,
+			default:1
+		}
+	},
 	data () {
         return {
-
+        	menus:[
+        		{val:1,text:'首页',path:'/'},
+        		{val:2,text:'精选特卖',path:'/choiceness'},
+        		{val:3,text:'精品男装',path:'/'},
+        		{val:4,text:'精品女装',path:'/'},
+        		{val:5,text:'品牌介绍',path:'/'}
+        	]
         }
     },
     components:{
