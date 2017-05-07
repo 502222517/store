@@ -8,6 +8,7 @@ import Vuex from 'vuex'
 import PC_Logo from '@/components/computer/logo'
 import PC_Head from '@/components/computer/head'
 import PC_Footer from '@/components/computer/footer'
+import PC_Mask from '@/components/computer/mask'
 // const PC_Head = r => require.ensure([], () => r(require('@/components/computer/head')), 'pc');
 
 Vue.config.productionTip = false
@@ -23,6 +24,7 @@ if(os == 'pc'){
 	Vue.component('vue-logo',PC_Logo);
 	Vue.component('vue-head',PC_Head);
 	Vue.component('vue-footer',PC_Footer);
+	Vue.component('vue-mask',PC_Mask);
 }else{
 
 }

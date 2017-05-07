@@ -35,6 +35,8 @@
      <div class="footer-cell">
        <vue-footer></vue-footer>
      </div>
+      <!-- 商品详情 -->
+     <vue-product-detial :id="pro_id" ref='proDetail'></vue-product-detial>
   </div>
 </template>
 
@@ -44,12 +46,13 @@ import navModule from "@/components/computer/nav-module";
 import threeProduct from "@/components/computer/product/three";
 import singleAd from "@/components/computer/ad/single";
 import classify from "@/components/computer/classify";
+import productDetail from "@/components/computer/product/detail";
 
 export default {
 	name: 'home',
 	data () {
 		return {
-		   
+		   pro_id:0
 		}
 	},
     components:{
@@ -57,7 +60,8 @@ export default {
       'vue-nav-module':navModule,
       'vue-three-product':threeProduct,
       'vue-single-ad':singleAd,
-      'vue-classify':classify
+      'vue-classify':classify,
+      'vue-product-detial':productDetail
     },
     created () {
 
