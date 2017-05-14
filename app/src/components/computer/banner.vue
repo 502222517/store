@@ -5,8 +5,8 @@
             <img src="../../data/images/banner/2.jpg">
         </li>
     </ul>
-    <div class="prev"></div>
-    <div class="next"></div>
+    <span class="ic_prev prev"></span>
+    <span class="ic_next next"></span>
 </div>
 </template>
 <script>
@@ -60,19 +60,21 @@ export default {
         position: absolute;
         top: 50%;
         z-index: 2;
-        width: 71px;
-        height: 71px;
+        width: 80px;
+        height: 80px;
         transform:translate(0,-50%);
         border-radius: 6px;
         cursor: pointer;
+        background:rgba(0,0,0,0.2);
+        &:active{
+            background:rgba(0,0,0,0.15);
+        }
     }
     .prev{
         left: 10px;
-        background:rgba(0,0,0,0.2) url('../../assets/icon/left.png') no-repeat;
     }
     .next{
         right: 10px;
-        background: rgba(0,0,0,0.2) url(../../assets/icon/right.png) no-repeat;
     }
 }
 </style>
